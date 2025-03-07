@@ -1,0 +1,1493 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Reminder: homeBackground was originally a class for the body tag in home.html*/
+.homeBackground{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('london.jpg'); 
+}
+
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+
+header h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+header h3 {
+    font-style: italic;
+    text-align: center;
+}
+
+.homeTitle, .homeSubtitle{
+  color: white;
+}
+
+
+/* Nav Bar details  */
+
+/* Animations for Dropdowns */
+.dropdown-toggle{
+  transition: 0.3s;
+}
+
+.dropdown-toggle:hover{
+  background-color: #7a7677;
+  color: white;
+}
+
+.dropdown-menu{
+  transition: 0.3s;
+}
+
+.dropdown-menu:hover{
+  background-color : azure;
+  color: black;
+}
+
+
+#navbar{
+  position: absolute;
+  top: 23.97%;
+  left: 50%;
+  height: 54px;
+  width: 1358px;
+  transform: translate(-50%, -49%);
+  z-index: 10;
+}
+
+
+
+/*Dimensions for text box on home page. come add stuff later*/
+.test{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 200px;
+  width: 1358px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+
+/* Carousel styles*/
+/* Image proportions for homepage */
+#oxfordPic{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+  height: 450px;
+}
+
+#kingsPic{
+  width: 1024px;
+  left: 120px;
+  height: 450px;
+}
+
+#palacePic{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+  height: 450px;
+}
+
+#londonEyePic{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+  height: 450px;
+}
+
+#ledburyPic{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+  height: 450px;
+}
+
+#winterActivityPic{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+  height: 450px;
+}
+
+#cityPic{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+  /*height: 500px;*/
+  height: 450px;
+}
+
+#liverpoolPic{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+ /*height: 500px;*/
+  height: 450px;
+}
+
+#myCarousel{
+  top: 150px;
+  
+}
+
+
+
+
+
+
+/* FAQ Page Styling */
+.helpNumber{
+  font-style: italic;
+  font-weight: bold;
+}
+
+.faqIntro{
+  top: 100px;
+  bottom: 100px;
+}
+
+.faqTitle{
+  text-align: center;
+}
+
+
+input, .answer{
+  display: none;
+}
+
+label{
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+input:checked~ul.answer{
+  display: block;
+}
+
+.customerQuestions{
+  border-style: solid;
+}
+
+.questionStyle{
+  font-size: 1.3em;
+  padding: 8px;
+}
+
+.faqPic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  opacity: 0.43;
+  border-radius: 15px;
+}
+
+.answer{
+  font-size: 1.2em;
+}
+
+.winterExplanation, .summerExplanation{
+  font-size: 1em;
+}
+
+
+
+
+/* Cafe Page Styling */
+.titlePic{
+  height: 500px;
+  width: 1000px;
+}
+
+.cafeParagraph, .ronsExplanation, .concertoExplanation, .ivyCafeExplanation,
+.ridingHouseExplanation{
+  font-size: 1.2em;
+}
+
+.cafeParagraph, .ronsExplanation, .concertoExplanation, .ivyCafeExplanation,
+.ridingHouseExplanation{
+  width: 900px;
+}
+
+.ronsPic{
+  transition: 0.2s;
+  height: 500px;
+  width: 800px;
+}
+
+.ronsPic:hover, .concertoPic:hover, .ivyCafePic:hover, .ridingHousePic:hover{
+  transform: scale(1.03);
+}
+
+.concertoPic{
+  transition: 0.2s;
+  height: 500px;
+  width: 850px;
+}
+
+.ivyCafePic{
+  transition: 0.2s;
+  height: 500px;
+  width: 850px;
+}
+
+.ridingHousePic{
+  transition: 0.2s;
+  height: 500px;
+  width: 850px;
+}
+
+
+/* Dining Page Styles */
+.diningTitlePic{
+  height: 500px;
+  width: 850px;
+}
+
+.diningParagraph{
+  font-size: 1.2em;
+  width: 900px;
+}
+
+.venuePic{
+  transition: 0.2s;
+  height: 500px;
+  width: 850px;
+}
+
+.venuePic:hover, .chottoMattePic:hover, .akokoPic:hover, .daTerraPic:hover, .anglerPic:hover{
+  transform: scale(1.03);
+}
+
+.venueExplanation, .chottoExplanation, .akokoExplanation, .daTerraExplanation, .anglerExplanation{
+  font-size: 1.2em;
+}
+
+.venueParagraph, .chottoParagraph, .akokoParagraph, .daTerraParagraph, .anglerParagraph{
+  width: 900px;
+}
+
+.chottoMattePic{
+  transition: 0.2s;
+  height: 500px;
+  width: 850px;
+}
+
+.akokoPic{
+  transition: 0.2s;
+  height: 500px;
+  width: 850px;
+}
+
+.daTerraPic{
+  transition: 0.2s;
+  height: 500px;
+  width: 845px;
+}
+
+.anglerPic{
+  transition: 0.2s;
+  height: 500px;
+  width: 845px;
+}
+
+
+
+
+/* Styling for Fast Food Page  */
+* {
+  box-sizing: border-box;
+}
+
+.column{
+  float: left;
+  width: 33.33%;
+  padding: 0px;
+  padding-top: 0px;
+}
+
+.row1::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.fastFoodParagraph{
+  font-size: 1.2em;
+}
+
+.wagamamaPic{
+  transition: 0.2s;
+  height: 500px;
+  width: 845px;
+}
+
+.wagamamaPic:hover, .shakeShackPic:hover, .burgerLobsterPic:hover, .pretPic:hover{
+  transform: scale(1.03);
+}
+
+.wagamamaParagraph, .shakeShackParagraph, .burgerLobsterParagraph, .pretParagraph{
+  width: 900px;
+}
+
+.wagamamaExplanation, .shakeShackExplanation, .burgerLobsterExplanation, .pretExplanation{
+  font-size: 1.2em;
+}
+
+.shakeShackPic{
+  transition: 0.2s;
+  height: 500px;
+  width: 850px;
+}
+
+.burgerLobsterPic{
+  transition: 0.2s;
+  height: 500px;
+  width: 850px;
+}
+
+.pretPic{
+  transition: 0.2s;
+  height: 500px;
+  width: 850px;
+}
+
+
+
+
+
+/* Styling for Attractions Landing Page */
+.attractionImage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("attractionPictures/bannerImage.jpg");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 23.97%;
+  left: 50%;
+  width: 1358px;
+  transform: translate(-50%, -49%);
+}
+
+
+
+.attractionText, .caption {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3em;
+}
+
+.descriptionText{
+  font-size: 1.5em;
+}
+
+.descriptionParagraph{
+  width: 850px;
+}
+
+
+
+
+.historyButton, .cultureButton, .shoppingButton, .outdoorButton, .adventureButton,
+.filmButton{
+  height: 150px;
+  width: 200px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.historyButton:hover, .cultureButton:hover, .shoppingButton:hover, .outdoorButton:hover, .adventureButton:hover,
+.filmButton:hover{
+  background-color: #c7c0c2;
+}
+
+.history, .culture, .shopping, .outdoor, .adventure, .film{
+  font-weight: bold;
+  color: black;
+  font-size: 2em;
+}
+
+
+.attractionColumn{
+  float: left;
+  width: 33.33%; 
+  padding: 5px;
+  padding-top: 35px;
+}
+
+.attractionRow::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
+.historyIcon, .outdoorIcon{
+  height: 100px;
+  width: 150px;
+}
+
+.cultureIcon{
+  height: 90px;
+  width: 120px;
+}
+
+.shoppingIcon{
+  height: 90px;
+  width: 145px;
+}
+
+.adventureIcon{
+  height: 90px;
+  width: 145px;
+}
+
+.filmIcon{
+  height: 45px;
+  height: 45px;
+}
+
+
+
+.weatherPic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  width: 90%;
+}
+
+.weatherCaption{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90.5%;
+}
+
+.attractionRow{
+  text-align: center;
+}
+
+
+.verticalLine{
+  border-bottom: 3px solid rgb(199, 193, 193);
+  left: 50%;
+  width: 2493px;
+  transform: translate(-50%, -49%);
+  z-index: 10;
+  opacity: 0.3;
+}
+
+
+
+.socialPlatformsPic{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+
+.mediaPic{
+  width: 700px;
+}
+
+
+.mediaCaption{
+  width: 70%;
+  color: black;
+  font-size: 1.2em;
+  margin-left: 300px;
+  text-align: center;
+  background-color: #c7c0c2;
+}
+
+.videoCaption{
+  text-align: center;
+}
+
+.attractionsVideo{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+/* Styling for the History page down below */
+
+.historyPic1{
+  width: 800px;
+  height: 500px;
+}
+
+.attractionPlatforms{
+  text-align: center;
+  width: 33.33%;
+  padding: 5px;
+  
+}
+
+.imageStack::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.historyPic2, .historyPic3{
+  height: 250px;
+}
+
+.historyPic3{
+  width: 373px;
+}
+
+.westminsterPic{
+  width: 900px;
+  height: 600px;
+}
+
+.westminsterIntroCaption{
+  font-size: 1.4em;
+}
+
+.westminsterExplanation{
+  font-size: 1.2em;
+  width: 920px;
+}
+
+
+.westminsterTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#westminsterHeader, #westminsterData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#westminsterRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+.buckinghamPic{
+  width: 900px;
+  height: 600px;
+}
+
+.buckinghamExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+#tourCountdown, .countdownLabel{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.buckinghamTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#buckinghamHeader, #buckinghamData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#buckinghamRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+.cathedralPic{
+  width: 900px;
+  height: 600px;
+}
+
+.cathedralExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+.cathedralTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#cathedralHeader, #cathedralData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#cathedralRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+.towerPic{
+  width: 900px;
+  height: 600px;
+}
+
+.towerExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+.towerTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#towerHeader, #towerData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#towerRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+
+
+
+/* Styling for the film/theater page down below */
+
+.filmPic1{
+  width: 800px;
+  height: 500px;
+}
+
+.filmPic2, .filmPic3{
+  height: 250px;
+}
+
+.filmPic2, .filmPic3{
+  width: 373px;
+}
+
+.filmIntroCaption{
+  font-size: 1.4em;
+}
+
+.royalOperaHousePic{
+  width: 900px;
+  height: 600px;
+}
+
+
+.royalExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+
+.royalTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#royalHeader, #royalData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#royalRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+.palladiumPic{
+  width: 900px;
+  height: 600px;
+}
+
+
+.palladiumExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+
+.palladiumTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#palladiumHeader, #palladiumData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#palladiumRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+.albertPic{
+  width: 900px;
+  height: 600px;
+}
+
+
+.albertExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+
+.albertTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#albertHeader, #albertData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#albertRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+.barbicanPic{
+  width: 900px;
+  height: 600px;
+}
+
+
+.barbicanExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+
+.barbicanTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#barbicanHeader, #barbicanData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#barbicanRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/** Styling below is for the Shopping page **/
+
+.shoppingIntroCaption{
+  font-size: 1.4em;
+}
+
+
+.shoppingPic1{
+  width: 800px;
+  height: 500px;
+}
+
+.shoppingPic2, .shoppingPic3{
+  height: 250px;
+}
+
+.shoppingPic2, .shoppingPic3{
+  width: 373px;
+}
+
+.oxfordStreetPic{
+  width: 900px;
+  height: 600px;
+}
+
+.oxfordStreetExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+
+
+.victoriaStreetPic{
+  width: 900px;
+  height: 600px;
+}
+
+.victoriaStreetExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+.leadenhallMarketPic{
+  width: 900px;
+  height: 600px;
+}
+
+.leadenhallMarketExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+.westfieldPic{
+  width: 900px;
+  height: 600px;
+}
+
+.westfieldExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+
+
+
+
+
+/*  Styling for the Outdoor Page */
+.outdoorsIntroCaption{
+  font-size: 1.4em;
+}
+
+
+.outdoorsPic1{
+  width: 800px;
+  height: 500px;
+}
+
+.outdoorsPic2, .outdoorsPic3{
+  height: 250px;
+}
+
+.outdoorsPic2, .outdoorsPic3{
+  width: 373px;
+}
+
+.stJamesPic{
+  width: 900px;
+  height: 600px;
+}
+
+.stJamesExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+.kewGardensPic{
+  width: 900px;
+  height: 600px;
+}
+
+.kewGardensExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+.kewTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#kewHeader, #kewData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#kewRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+.hydeParkPic{
+  width: 900px;
+  height: 600px;
+}
+
+.hydeParkExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+.regentsParkPic{
+  width: 900px;
+  height: 600px;
+}
+
+.regentsParkExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+
+/* Styling for the Adventure page */
+.adventureIntroCaption{
+  font-size: 1.4em;
+}
+
+
+.adventurePic1{
+  width: 800px;
+  height: 500px;
+}
+
+.adventurePic2, .adventurePic3{
+  height: 250px;
+  width: 373px;
+}
+
+.ripperPic{
+  width: 900px;
+  height: 600px;
+}
+
+.ripperExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+
+
+
+.darePic{
+  width: 900px;
+  height: 600px;
+}
+
+.dareExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+.dareTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#dareHeader, #dareData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#dareRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+
+.teamSportPic{
+  width: 900px;
+  height: 600px;
+}
+
+.teamSportExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+.teamSportTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#teamSportHeader, #teamSportData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#teamSportRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+
+.crystalMazePic{
+  width: 900px;
+  height: 600px;
+}
+
+.crystalMazeExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+.crystalTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#crystalHeader, #crystalData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#crystalRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+/* Styling for the Culture page */
+.cultureIntroCaption{
+  font-size: 1.4em;
+}
+
+.culturePic1{
+  width: 780px;
+  height: 500px;
+}
+
+.culturePic2, .culturePic3{
+  height: 250px;
+  width: 373px;
+}
+
+.britishMuseumPic{
+  width: 900px;
+  height: 600px;
+}
+
+.britishMuseumExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+.britishMuseumTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#britishMuseumHeader, #britishMuseumData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#britishMuseumRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+.tatePic{
+  width: 900px;
+  height: 600px;
+}
+
+.tateExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+.tateTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#tateHeader, #tateData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#tateRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+.sherlockPic{
+  width: 900px;
+  height: 600px;
+}
+
+.sherlockExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+.sherlockTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#sherlockHeader, #sherlockData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#sherlockRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+
+.nationalPic{
+  width: 900px;
+  height: 600px;
+}
+
+.nationalExplanation{
+  width: 900px;
+  font-size: 1.2em;
+}
+
+.nationalTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#nationalHeader, #nationalData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#nationalRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+
+
+/* Additional Home Page Sign-Up stylings down below */
+#newsletterButton{
+ padding: 14px 40px;
+ font-size: 16px;
+ font-weight: bold;
+ transition: 0.3s;
+}
+
+#newsletterButton:hover{
+  background-color: black;
+  color: white;
+}
+
+.newsletterCaption{
+  font-size: 1.5em;
+}
+
+#newsletterTitle{
+  text-align: center;
+}
+
+
+
+.newsletterForm{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+  background-color: white;
+  border-radius: 25px;
+}
+
+#submitButton{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+}
+
+
+
+/*  Styling for the footer  */
+.websiteFooter{
+  background-color: rgb(36, 36, 36);
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  height: 315px;
+  width: 1358px;
+  z-index: 10;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  
+  transform: translate(-50%, -49%);
+}
+  
+main{
+  flex: 1;
+}
+
+
+.websiteFooter p{
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.footerTitle{
+  color: white;
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.footerBooth{
+  height: 95px;
+}
+
+
+
+/* Styling for transportation page */
+.transportationImage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("transportationPictures/transportationBanner.jpg");
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: 23.97%;
+  left: 50%;
+  width: 1358px;
+  transform: translate(-50%, -49%);
+}
+
+
+
+.transportationText, .caption {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3em;
+}
+
+
+.cityMapCaption{
+  width: 900px;
+  font-size: 1.3em;
+  
+}
+
+.tubeMap{
+  width: 1000px;
+  height: 700px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+
+.flightCaption{
+  width: 900px;
+  font-size: 1.3em;
+}
+
+.airportTable{
+  border-collapse: collapse;
+  width: 900px;
+}
+
+#airportHeader, #airportData{
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 1.2em;
+}
+
+#airportRow:nth-child(even){
+  background-color: #dddddd;
+}
+
+
+
+
+.deltaPic{
+  width: 700px;
+  border-radius: 25px;
+}
+
+.deltaCaption{
+  width: 70%;
+  color: black;
+  font-size: 1.2em;
+  margin-left: 300px;
+  text-align: center;
+}
+
+
+
+
+.klmPic{
+  width: 700px;
+  border-radius: 25px;
+}
+
+.klmCaption{
+  width: 70%;
+  color: black;
+  font-size: 1.2em;
+  margin-left: 300px;
+  text-align: center;
+}
+
+
+
+
+.virginAtlanticPic{
+  width: 700px;
+  border-radius: 25px;
+}
+
+.virginAtlanticCaption{
+  width: 70%;
+  color: black;
+  font-size: 1.2em;
+  margin-left: 300px;
+  text-align: center;
+}
+
+.airCanadaPic{
+  width: 700px;
+  border-radius: 25px;
+}
+
+.airCanadaCaption{
+  width: 70%;
+  color: black;
+  font-size: 1.2em;
+  margin-left: 300px;
+  text-align: center;
+}
+
+.airCanadaRow, .airCanadaCaption, .deltaRow, .deltaCaption, .klmRow, .klmCaption,
+.virginAtlanticRow, .virginAtlanticCaption{
+  padding: 30px;
+}
+
+#airCanadaButton, #klmButton, #deltaButton, #virginAtlanticButton{
+  padding: 14px 40px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#airCanadaButton:hover, #klmButton:hover, #deltaButton:hover, #virginAtlanticButton:hover{
+  background-color: rgb(100, 100, 100);
+
+}
+
+
+#centralParkPic{
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 683px;
+}
+
+
+#waldorfPic{
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 683px;
+}
+
+#parkPlazaPic{
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 683px;
+}
+
+#towerSuitesPic{
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 683px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Explore London</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="phonebooth.png">
+        <script src="buttons.js"></script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 class="homeTitle" style="color: black">EXPLORE LONDON</h1>
+                <h3 class="homeSubtitle" style="color: black">GUIDE TO ENJOYING YOUR VISIT ACROSS THE POND</h3>
+            </header>
+            <nav class="navbar navbar-inverse" id="navbar">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="home.html">Explore London</a>
+                </div>
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="home.html">Home</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Food
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="cafes.html">Cafes</a></li>
+                      <li><a href="dining.html">Fine Dining</a></li>
+                      <li><a href="fastFood.html">Fast Food</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li><a href="transportation.html">Transportation</a></li>
+                  <li><a href="attractions.html">Attractions</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                </ul>
+              </div>
+            </nav>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+           
+            
+
+    
+            <!--This is the banner image-->
+            <div class="transportationImage">
+                <div class="transportation-text">
+                  <h1 class="caption">Make Sure Your Time In The City Is Comfortable And Affordable</h1>
+                </div>
+            </div>
+            
+            <div class="transportationInformation">
+
+                <h1>Knowing Your Way Around The City</h1>
+                <p class="cityMapCaption">London is such a big city, which can make it very easy for those
+                    who are not familiar with it to get lost. In order to prevent such a thing from happening,
+                    we have provided tourists with a city map of noteable landmarks, bus stops, and tube/train 
+                    stations that can be used as points of reference and transportation. For a more enhanced view,
+                    please visit 
+                    <a href="https://www.bbc.co.uk/london/travel/downloads/tube_map.html">
+                        the BBC London Tube Map.
+                    </a>
+                </p>
+                <br>
+                <div class="cityMap">
+                    <img src="transportationPictures/tubeMap.gif" class="tubeMap">
+                </div>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="verticalLine"></div>
+
+            <br>
+            <br>
+
+            <h1>Booking A Flight Made Easy</h1>
+            <p class="flightCaption">Since London is such a popular destination, tourists going to all different
+                areas of England tend to use it as their central landing place when flying in. Because of this,
+                London has six different airports: Heathrow, Gatwick, City Airport, Luton, Stansted, and 
+                Southend Airport. 
+            </p>
+            <br>
+
+            <table class="airportTable">
+                <tr id="airportRow">
+                    <th id="airportHeader">Airport</th>
+                    <th id="airportHeader">Distance to Central London</th>
+                </tr>
+                <tr id="airportRow">
+                    <td id="airportData">Heathrow</td>
+                    <td id="airportData">40 minutes</td>
+                </tr>
+                <tr id="airportRow">
+                    <td id="airportData">Southend</td>
+                    <td id="airportData">50 minutes</td>
+                </tr>
+                <tr id="airportRow">
+                    <td id="airportData">Luton</td>
+                    <td id="airportData">1 hour</td>
+                </tr>
+                <tr id="airportRow">
+                    <td id="airportData">Gatwick</td>
+                    <td id="airportData">1 hour</td>
+                </tr>
+                <tr id="airportRow">
+                    <td id="airportData">City Airport</td>
+                    <td id="airportData">30 minutes</td>
+                </tr>
+                <tr id="airportRow">
+                    <td id="airportData">Stansted</td>
+                    <td id="airportData">1.5 hours</td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+
+            <h2>Airlines Entering London</h2>
+            <p class="flightCaption">There are many different airlines that have flights 
+            traveling in and out of London. Each airline provides different services 
+            and different types of planes depending on the time of day. Some examples of these 
+            airlines include Delta, JetBlue, KLM, Virgin Atlantic, Air Canada, Lufthansa, and 
+            British Airways. Here, we have chose some of the more popular flight services to 
+            provide tourists with the necessary information.
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+            <table style="width: 100%">
+                <tr id="deltaRow">
+                  <th><img src="transportationPictures/deltaImage.jpg" class="deltaPic"></th>
+                  <th><br></th>
+                  <td class="deltaCaption"><b>Delta</b>
+                    <p style="text-align: left;">Delta is one of the largest airline providers, and serves flights spread across six 
+                        of the continents. Their services include Economy, Delta One, and Comfort+, which are 
+                        known for their premium customer service. They are often high regarded for their 
+                        dedication to comfort and safety of their customers.
+                    </p>
+                    <br>
+                    <p style="text-align: left;">Because they in the SkyTeam Alliance, Delta can connect
+                        customers to a variety of other airline services.</p>
+                    <br>
+
+                    <button id="deltaButton">
+                        <a href="https://www.delta.com/?srsltid=AfmBOop57NpPAeMvblyvJE90NEtwmmD5ihp4cW64W3GKym5Hw7k-5XM8" style="color: black;"
+                        target="_blank">Delta</a>
+                    </button>
+
+                  </td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <table style="width: 100%">
+                <tr id="klmRow">
+                  <th><img src="transportationPictures/klmImage.webp" class="klmPic"></th>
+                  <th></th>
+                  <td class="klmCaption"><b>KLM</b>
+                    <p style="text-align: left;">Recognized as one of the world's oldest airports, KLM is the 
+                        Netherlands's main air travel service. Their primary location is in Amsterdam, and they
+                        service a variety of domestic and international flights that reach areas
+                        in places like Asia, Africa, North America, Europe, and the Caribbeans.
+                    </p>
+                    <br>
+                    <p style="text-align: left;">Because they in the SkyTeam Alliance, KLM can connect
+                        customers to a variety of other airline services. 
+                    </p>
+                    <br>
+
+                    <button id="klmButton">
+                        <a href="https://www.klm.com/?gclid=CjwKCAiAzPy8BhBoEiwAbnM9O7YBG25-CD1pqbfConERdGlLuDetEWy8gnfSitxh9onasDB2C_iZnRoCfHYQAvD_BwE&gclsrc=aw.ds" style="color: black;"
+                        target="_blank">KLM</a>
+                    </button>
+
+                  </td>
+                </tr>
+            </table>
+            
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <table style="width: 100%">
+                <tr id="virginAtlanticRow">
+                  <th><img src="transportationPictures/virginAtlanticImage.jpg" class="virginAtlanticPic"></th>
+                  <th><br></th>
+
+                  <td class="virginAtlanticCaption"> <b>Virgin Atlantic</b>
+                    <p style="text-align:left;">Founded in 1984, Virgin Atlantic is known for providing customers with
+                        a unique and comfortable traveling experience. The airline provides internatioal flights to a 
+                        variety of different popular locations in Canada, the United States, the Caribbean, Africa, the 
+                        United Kingdom, and Asia. 
+                    </p>
+                    <br>
+                    <p style="text-align: left;">Their services include Economy, Premium, and Upper Class, and they are recognized 
+                        for having very comfortable cabin areas that provide customers with a fun and welcoming atmostphere.</p>
+                    <br>
+                    <button id="virginAtlanticButton">
+                        <a href="https://www.virginatlantic.com/en-US?ad=BauRsa2022V1&cm_mmc=10.11.00.17.12.00.142&&ft_custom=p78194947269_pgclid_CjwKCAiAzPy8BhBoEiwAbnM9Ozk5ECzjU6p7zmTMTNjwZi7L5ldBW3Ipdb2gxWYdar9LPLpshTV04BoC7-sQAvD_BwE_pgclsrc_aw.ds_targetid_kwd-39444070&ft_section=Search+%7C+Brand+%7C+Pure&ft_keyword=virgin+atlantic&url=https://www.virginatlantic.com/en-US%3Fad%3DBauRsa2022V1%26cm_mmc%3D10.11.00.17.12.00.142%26gclsrc%3Daw.ds%26&gad_source=1&gclid=CjwKCAiAzPy8BhBoEiwAbnM9Ozk5ECzjU6p7zmTMTNjwZi7L5ldBW3Ipdb2gxWYdar9LPLpshTV04BoC7-sQAvD_BwE&gclsrc=aw.ds" style="color: black;" target="_blank">
+                            Virgin Atlantic</a>
+                      </button>
+                  </td>
+
+                 
+
+                </tr>
+            </table>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <table style="width: 100%">
+                <tr id="airCanadaRow">
+                  <th><img src="transportationPictures/airCanadaImage.jpg" class="airCanadaPic"></th>
+                  <th><br></th>
+                  <td class="airCanadaCaption"> <b>Air Canada</b>
+                    <p style="text-align: left;">Air Canada serves as Canada's largest airline service. It serves both domestic 
+                        and international flights in and out of six different continents. They 
+                        have over 400 airplanes, and provide different services such as economy,
+                        business, and premium economy. Air Canada is highly regarded for its exceptional 
+                        customer service and its committment to maintaining sustainability efforts.
+                    </p>
+                    <br>
+                    <p style="text-align: left;">The airline is also part of the Star Alliance, meaning that it can connect 
+                        their customers with a variety of other airlines that they are in partnetship with.
+                    </p>
+                    <br>
+
+                    <button id="airCanadaButton">
+                        <a href="https://www.aircanada.com/home/us/en/aco/flights" target="_blank" style="color: black;">Air Canada</a>
+                    </button>
+
+                  </td>
+                </tr>
+            </table>
+
+            <br>
+            <br>
+            <br>
+
+            <div class="verticalLine"></div>
+
+            <br>
+            <br>
+
+            <h1>Need Help Choosing A Hotel? Here Are Our Top Picks</h1>
+            <p style="font-size: 2em;">Choosing a hotel that is just right for you can be quite difficult for many 
+                tourists. To make the search easier, we've narrowed down some top picks 
+                that tourists have enjoyed in the past. Click through the carousel to get additional details about 
+                each hotel.
+            </p>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                  <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+            
+                  <div class="item active" id="waldorfPic">
+                    <p>
+                        <a href="https://www.hilton.com/en/hotels/lonwahi-the-waldorf-hilton-london/?WT.mc_id=zINDA0EMEA1MB2PSH3GGL4INTBPP5dkt6MULTIBR7_121126570_1003528_p80581422333&&&&&gad_source=1&gclid=CjwKCAiAzPy8BhBoEiwAbnM9O--bLJNM9llvcXCfiBlhM3QPoJjfbLmJsy278mijBA4xv3HxBp1AVRoCv1QQAvD_BwE&gclsrc=aw.ds">
+                            <img src="transportationPictures/waldorfPic.jpg" alt="The Waldorf Hilton">
+                        </a>  
+                    </p>
+
+                    <div class="carousel-caption">
+                      <h3>The Waldorf Hilton, London</h3>
+                      
+                    </div>
+                  </div>
+            
+                  <div class="item" id="parkPlazaPic">
+                    <p>
+                        <a href="https://www.parkplazawestminsterbridge.com/">
+                            <img src="transportationPictures/parkPlazaPic.jpg" alt="Park Plaza Westminster Bridge">
+                        </a>  
+                    </p>
+                    
+                    <div class="carousel-caption">
+                      <h3>Park Plaza Westminster Bridge, London</h3>
+                    </div>
+                  </div>
+                
+                  <div class="item" id="towerSuitesPic">
+                    <p>
+                        <a href="https://www.blueorchid.com/en/hotels/gb/london/london-tower-suites">
+                            <img src="transportationPictures/towerSuitesPic.jpg" alt="Tower Suites">
+                        </a>  
+                    </p>
+
+                    <div class="carousel-caption">
+                      <h3>Tower Suites By Blue Orchid, London</h3>
+                      
+                    </div>
+                  </div>
+
+                  <div class="item" id="centralParkPic">
+                    <p>
+                        <a href="https://centralparkcollection.co.uk/hotels/central-park-hotel/?gad_source=1&gclid=CjwKCAiAzPy8BhBoEiwAbnM9Oy70Ep5DEUm-38OZu8DKxwaCVJHIrFR7UfzkKjiOXeNOh3v_oK0tKxoCaKYQAvD_BwE">
+                            <img src="transportationPictures/centralParkPic.jpg" alt="Central Park Hotel">
+                        </a>  
+                    </p>
+                    <div class="carousel-caption">
+                      <h3>Central Park Hotel, London</h3>
+                      
+                    </div>
+                  </div>
+                <!--End of picture div element-->
+                </div>
+
+
+
+                <!--Test down below-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+
+            <!--End of information div element-->    
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        <!--End of complete div element-->
+        </div>
+
+        <footer class="websiteFooter">
+            <p class="footerTitle" style="font-size: 3em;">Explore London</p>
+            <p>Email Us: ExploreLondonSpecialists@gmail.com</p>
+            <p ><a href="newsletter.html" style="color: white">Newsletter Sign Up</a></p>
+            <p style="font-size: 1em;">Our main purpose at Explore London is to provide
+              travelers with all of the relevant information they need in order to make 
+              sure they have enough information in regard to the many forms of entertainment
+              and accomodations that the city of London has to offer. 
+            </p>
+            <p>Call Our Helpline: 020 7586 2935</p>
+            <img src="footerPhonebooth.webp" class="footerBooth">
+          </footer>
+        
+    </body>
+</html>
