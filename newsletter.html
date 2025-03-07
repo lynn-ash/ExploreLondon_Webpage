@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Explore London</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="phonebooth.png">
+        
+    </head>
+    <body style="background-color: rgb(238, 238, 238);">
+        <div class="container">
+            <header>
+                <h1 class="homeTitle" style="color: black">EXPLORE LONDON</h1>
+                <h3 class="homeSubtitle" style="color: black">GUIDE TO ENJOYING YOUR VISIT ACROSS THE POND</h3>
+            </header>
+            <nav class="navbar navbar-inverse" id="navbar">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="home.html">Explore London</a>
+                </div>
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="home.html">Home</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Food
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="cafes.html">Cafes</a></li>
+                      <li><a href="dining.html">Fine Dining</a></li>
+                      <li><a href="fastFood.html">Fast Food</a></li>
+                    </ul>
+                  </li>
+                  
+                  <li><a href="transportation.html">Transportation</a></li>
+                  <li><a href="attractions.html">Attractions</a></li>
+                  <li><a href="faq.html">FAQ</a></li>
+                </ul>
+              </div>
+            </nav>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <!--NOTE: **Because there is no php server, this code is not actually being stored anywhere.
+                      This (along with the newsletterSignUp.php file) is moreso to show how a form 
+                      should look like** -->
+
+            <form method="post" action="newsletterSignUp.php" class="newsletterForm" id="formNewsletter">
+                <h1 id="newsletterTitle">Join The Explore London Newsletter</h1>
+
+                <label for="fname">First Name: </label>
+                <input type="text" id="fname" name="fname"  class="form-control" placeholder="First Name" required>
+                <br>
+
+                <label for="lname">Last Name: </label>
+                <input type="text" id="lname" name="lname" class="form-control" placeholder="Last Name" required>
+                <br>
+
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                <br>
+
+                <label for="comment"> Additional Comments: </label>
+                <textarea rows="4" cols="50" id="comment" name="comment" placeholder="Add comments here..." class="form-control"></textarea>
+                <br>
+
+                <input type="submit" onClick="submitNewsletter()" value="Submit" class="btn btn-primary" id="submitButton">
+            </form>
+            <script>
+                function submitNewsletter(){
+                    document.getElementById("formNewsletter").submit();
+                }
+            </script>
+        <!--End of complete div element-->
+        </div>
+    </body>
+</html>
